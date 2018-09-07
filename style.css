@@ -1,0 +1,63 @@
+.point {
+  margin-left: 100px;
+  padding: 20px 20px 20px 20px;
+  max-width: 450px;
+  line-height: 30px;
+  font-size: 19px;
+  text-align: justify;
+  background-color: rgba(255,255,255,0.6);
+}
+#me {
+  margin-left: 100px;
+  margin-top:40px;
+  font-size: 62px;
+  max-width: 490px;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#me:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+body {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background-image:url('img/img1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*LINKS*/
+a:link {
+  text-decoration: none;
+  color: pink;
+  transition: .5s;
+  font-weight: bold;
+  color: 	#466C84;
+}
+
+a:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}
+
+a:visited {
+  color: 	#466C84;
+  transition: .5s;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}
