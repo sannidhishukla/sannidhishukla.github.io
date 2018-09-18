@@ -1,0 +1,96 @@
+.pub {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-left: 100px;
+  padding: 10px 20px 10px 20px;
+  max-width: 800px;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+  font-weight: 700;
+}
+.title {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-left: 100px;
+  padding: 0px 20px 0px 20px;
+  max-width: 800px;
+  line-height: 30px;
+  font-size: 19px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+}
+.blurb {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-left: 100px;
+  padding: 10px 70px 10px 70px;
+  max-width: 700px;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: justify;
+  background-color: rgba(255,255,255,0.6);
+}
+#me {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-left: 150px;
+  margin-top:20px;
+  font-size: 62px;
+  max-width: 800px;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  transition: 0.5s;
+}
+#home {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-left: 150px;
+  margin-top:0px;
+  font-size: 19px;
+  max-width: 800px;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+#me:hover {
+  color: white;
+  transition: 0.5s;
+}
+#home:hover {
+  color: white;
+  transition: 0.5s;
+}
+body {
+  background-image:url('img/img1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*LINKS*/
+a:link {
+  text-decoration: none;
+  color: pink;
+  transition: .5s;
+  font-weight: bold;
+  color: 	#466C84;
+}
+
+a:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}
+
+a:visited {
+  color: 	#466C84;
+  transition: .5s;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}
