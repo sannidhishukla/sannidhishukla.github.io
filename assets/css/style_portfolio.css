@@ -1,6 +1,86 @@
+/* HOME */
+/* HOME */
+/* HOME */
+/* HOME */
+/* HOME */
+
+body {
+	background-color: #f2f1ef;
+	color: #333;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin: 0;
+	padding: 0;
+  background-color: #C6DEFF;
+}
+.panel {
+}
+
+/* SIDEBAR */
+
+#list-container {
+
+  height: 100%;
+  width: 60%;
+	position: fixed;
+	background-size: cover;
+  background-color: white;
+  opacity: 0.6;
+}
+#list-title {
+  color: black;
+  padding: 40px 0 10px 0;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  border-color: #8E0047;
+  transition: 1s;
+  text-align:center;
+  opacity: 1;
+}
+.separator-side {
+	height: 1px;
+	margin: auto;
+	width: 50%;
+	background-color: black;
+  margin-bottom: 30px;
+}
+.list-item {
+  border-color: #8E0047;
+  padding: 10px 0px 10px 0px;
+  margin-top:2px;
+  transition: 1s;
+  text-align:center;
+  color: black;
+  opacity: 70%;
+}
+.list-item:hover {
+  color: #8E0047;
+  transition-duration: 1s;
+}
+
+/* ABOUT */
+
+.container {
+	margin: 15px auto 0 auto;
+	width: 60%;
+}
+#title {
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: lowercase;
+	color: #666;
+  font-weight: 700;
+}
+
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+/*PORTFOLIO*/
+
 .pub {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-left: 100px;
   padding: 10px 20px 10px 20px;
   max-width: 800px;
   font-size: 26px;
@@ -10,7 +90,6 @@
 }
 .title {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-left: 100px;
   padding: 0px 20px 0px 20px;
   max-width: 800px;
   line-height: 30px;
@@ -20,7 +99,6 @@
 }
 .blurb {
   font-family: 'Alegreya Sans', sans-serif;
-  margin-left: 100px;
   padding: 10px 70px 10px 70px;
   max-width: 700px;
   line-height: 20px;
@@ -30,10 +108,9 @@
 }
 #me {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-left: 150px;
   margin-top:20px;
   font-size: 62px;
-  max-width: 800px;
+  width: 100%;
   text-align:center;
   letter-spacing: 4.05px;
   text-transform:lowercase;
@@ -41,10 +118,8 @@
 }
 #home {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-left: 150px;
   margin-top:0px;
   font-size: 19px;
-  max-width: 800px;
   text-align:center;
   letter-spacing: 4.05px;
   text-transform:lowercase;
