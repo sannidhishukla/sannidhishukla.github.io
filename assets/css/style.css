@@ -72,6 +72,7 @@ body {
 }
 .container {
 	margin: 15px auto 0 auto;
+	width: 600px;
 }
 #title {
 	font-size: 30px;
@@ -125,12 +126,12 @@ img {
 }
 .menu #text {
 	text-align: justify;
-	align-items: center;
   font-size: 18px;
 	max-width: 550px;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	text-transform: lowercase;
 	display: block;
+	margin-left: auto;
 	margin-right: auto;
 	color: #444;
 }
