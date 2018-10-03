@@ -1,0 +1,112 @@
+body {
+			background-color: #C6DEFF;
+			font-family: 'Alegreya Sans SC', sans-serif;
+}
+#me {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-top:20px;
+  font-size: 62px;
+  width: 100%;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  transition: 0.5s;
+}
+#home {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-top:0px;
+  font-size: 19px;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+#me:hover {
+  color: white;
+  transition: 0.5s;
+}
+#home:hover {
+  color: white;
+  transition: 0.5s;
+}
+#gallery {
+	position:absolute;
+	max-width: none;
+	text-align: center;
+}
+.container {
+	position: relative;
+	display:inline-block;
+  justify-content: center;
+  margin:90px;
+}
+#gallery img {
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
+  transition:.5s ease;
+  position:relative;
+	border: 5px solid #ffffff;
+	border-radius: 200px;
+	padding: 3px;
+	z-index:1;
+}
+#gallery img:hover {
+  transition:.5s ease;
+}
+.text{
+  position:absolute;
+  text-align:center;
+  width:216px;
+
+}
+/*.title {
+	font-size:20px;
+	margin-top:20px;
+}
+.author {
+	font-size: 18px;
+	margin-top:5px;
+}
+.quote {
+	margin-top:15px;
+	line-height: 1.5;
+	text-transform: lowercase;
+	font-style: italic;
+	padding-left:2px;
+	padding-right:2px;
+}*/
+.text-active {
+	opacity:0;
+	transition:0.4s ease;
+}
+/*LINKS*/
+a:link {
+  text-decoration: none;
+  color: pink;
+  transition: .5s;
+  font-weight: bold;
+  color: 	#466C84;
+}
+
+a:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}
+
+a:visited {
+  color: 	#466C84;
+  transition: .5s;
+}
+
+a:active {
+  color: white;
+}
+
+a:visited:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+}

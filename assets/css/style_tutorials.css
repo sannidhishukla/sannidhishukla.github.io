@@ -1,0 +1,81 @@
+body {
+			background-color: #C6DEFF;
+			font-family: 'Alegreya Sans SC', sans-serif;
+}
+#me {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-top:20px;
+  font-size: 62px;
+  width: 100%;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  transition: 0.5s;
+}
+#home {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-top:0px;
+  font-size: 19px;
+  text-align:center;
+  letter-spacing: 4.05px;
+  text-transform:lowercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+.instructions {
+	margin: 15px auto 0 auto;
+	width: 60%;
+  background-color:white;
+  opacity:0.7;
+}
+.section {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding: 10px 20px 0px 20px;
+  max-width: 800px;
+  font-size: 26px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+  font-weight: 700;
+}
+.list {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 0px 100px 0px 100px;
+  max-width: 700px;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: justify;
+  background-color: rgba(255,255,255,0.6);
+  text-align: justify;
+}
+span.Tip {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+}
+/*links*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: .5s;
+  color: #33A1C9;
+  text-decoration: none;
+}
+
+a:visited {
+  color: 	#466C84;
+  transition: .5s;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited:hover {
+  letter-spacing: 0.7px;
+  transition: .5s;
+  color: #33A1C9;
+  text-decoration: none;
+}
