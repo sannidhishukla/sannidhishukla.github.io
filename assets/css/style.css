@@ -5,26 +5,23 @@
 /* HOME */
 
 body {
-	background-color: #f2f1ef;
 	color: #333;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	margin: 0;
 	padding: 0;
   background-color: #C6DEFF;
 }
-.panel {
-}
-
 /* SIDEBAR */
-
-#list-container {
-
-  height: 100%;
-  width: 30%;
+.sidebar {
+	height: 100%;
+	width: 30%;
 	position: fixed;
 	background-size: cover;
-  background-color: white;
-  opacity: 0.6;
+	background-color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 #list-title {
   color: black;
@@ -44,19 +41,50 @@ body {
 	background-color: black;
   margin-bottom: 30px;
 }
-.list-item {
-		text-transform: lowercase;
+.sidebar a, .dropdown-btn {
+	text-transform: lowercase;
   border-color: #8E0047;
   padding: 10px 0px 10px 0px;
-  margin-top:2px;
   transition: 1s;
   text-align:center;
   color: black;
-  opacity: 70%;
+	font-family: 'Alegreya Sans SC', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  cursor: pointer;
+  outline: none;
 }
-.list-item:hover {
-  color: #8E0047;
-  transition-duration: 1s;
+.sidebar a:hover {
+	 letter-spacing: 0.7px;
+	 transition: .5s;
+   color: #33A1C9;
+}
+.dropdown-btn{
+	 opacity: 100%;
+	 font-weight: 700;
+	 color: black;
+}
+.active {
+  background-color: #ffffff;
+	opacity: 100%;
+}
+.dropdown-container {
+  display: none;
+	color: black;
+  padding-left: 8px;
+	opacity: 100%;
+	width: 60%;
+	margin-left: 20%;
+}
+.separator-drop {
+	height: 1px;
+	margin: auto;
+	width: 50%;
+	background-color: black;
 }
 
 /* ABOUT */
@@ -135,41 +163,11 @@ img {
 	margin-right: auto;
 	color: #444;
 }
-.social {
-	margin-top: 60px;
-	text-align: center;
-}
-.social .item {
-	border: 1px solid #444;
-	cursor: pointer;
-	font-size: 12px;
-	letter-spacing: 3px;
-	padding: 6px 10px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 20%;
-	transition: 0.3s;
-	-moz-transition: 0.3s;
-	-webkit-transition: 0.3s;
-	display: inline-block;
-	margin-left: -5px;
-	margin: 2px;
-}
-#content .social .item {
-	opacity: 0.3;
-	background-color: #333;
-}
-#content .social .item:hover {
-	background-color: #f4f4f4;
-	color: #333;
-	opacity: 0.7;
-}
 
 a:link {
   text-decoration: none;
   color: pink;
   transition: .5s;
-  font-weight: bold;
   color: 	#466C84;
 }
 

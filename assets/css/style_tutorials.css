@@ -52,6 +52,10 @@ span.Tip {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 700;
 }
+span.bold {
+	font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 500;
+}
 /*links*/
 a {
   text-decoration: none;

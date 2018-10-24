@@ -3,43 +3,53 @@
 <head>
   <title>Sannidhi Shukla</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC:400,500,700,800" rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
-  <div id="list-container" class="panel">
-    <div id="list-title"> Links </div>
-    <div class="separator-side"></div>
-    <div id='list'>
-      <div class="list-item">
-        <a href ="https://www.linkedin.com/in/sannidhishukla">
-          LinkedIn
-        </a>
-      </div>
-      <div class="list-item">
-        <a href="portfolio.html">
-          Writing Samples
-        </a>
-      </div>
-      <div class="list-item">
-        <a href="dh_tutorials.html">
-          Digital Humanities Tutorials
-        </a>
-      </div>
-      <div class="list-item">
-        <a href ="https://github.com/sannidhishukla">
-          GitHub
-        </a>
-      </div>
-      <div class="list-item">
-        <a href ="https://www.twitter.com/sannidhishukla">
-          Twitter
-        </a>
-      </div>
-      <div class="list-item">
-        <a href="mailto:sannidhishukla@berkeley.edu?Subject=Hello!" target="_top">
-          Email
-        </a>
+  <div class="sidebar">
+    <div id="list-container">
+      <div id="list-title"> Links </div>
+      <div class="separator-side"></div>
+      <div id='list'>
+        <div class="list-item">
+          <a href ="https://www.linkedin.com/in/sannidhishukla">
+            LinkedIn
+          </a>
+        </div>
+        <div class="list-item">
+          <button class="dropdown-btn">Writing +
+          </button>
+          <div class="dropdown-container">
+            <div class="separator-drop"></div>
+            <a href="portfolio.html">The Daily Californian</a>
+            <a href="#">East Bay Express</a>
+            <a href="#">Social Media</a>
+            <div class="separator-drop"></div>
+          </div>
+        </div>
+        <button class="dropdown-btn">Digital Humanities +
+        </button>
+        <div class="dropdown-container">
+          <div class="separator-drop"></div>
+          <a href="dh_tutorials.html">Tutorials</a>
+          <div class="separator-drop"></div>
+        </div>
+        <div class="list-item">
+          <a href ="https://github.com/sannidhishukla">
+            GitHub
+          </a>
+        </div>
+        <div class="list-item">
+          <a href ="https://www.twitter.com/sannidhishukla">
+            Twitter
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="mailto:sannidhishukla@berkeley.edu?Subject=Hello!" target="_top">
+            Email
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -68,7 +78,23 @@
           You can also look around to see my writing, code, and learn more about me!
         </div>
 			</div>
-				</div>
-			</div>
+    </div>
+  </div>
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
