@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../assets/css/style_tutorials.css">
+		<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<title>Cleaning Data with RegEx</title>
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+Sans+SC:400,500,700,800" rel="stylesheet">
+		<link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+	</head>
+	<body>
+		<div id="me">
+      Using Regular Expressions to Clean Data
+    </div>
+    <div id="home">
+      <a href="../index.html">Home</a>
+    </div>
+    <div id="home">
+      <a href="../dh_tutorials.html">More Tutorials</a>
+    </div>
+		<div class="instructions">
+			<div class="section">
+				Preprocessing
+			</div>
+			<div class="list">
+				</br>
+					It's always really exciting to find the exact perfect dataset for what you need. Unfortunately, before you can begin to explore it, you
+					typically have to go through the frustrating preprocessing stage and clean it up so that it's easy to work with. Preprocessing can come in
+					many forms from playing with data types to working with text to make sure the formatting is consistent and that it's not full of unnecessary
+					nonsense.
+				</br>
+				</br>
+					One way to clean up text is using regular expressions, little patterns that can be used to search through text. Here are some ways that
+					you can use regular expressions to clean up your data.
+				</div>
+			<div class="section">
+				Putting together regular expressions patterns
+			</div>
+			<div class="list">
+			</br>
+				To get started, let's take a look at some of the most common pieces that you can put together into regular expressions.
+			</br>
+			</br>
+			<ul>
+				<li>
+					<span class="bold">\w, \d, \s:</span> These patterns can be used to search for words, digits, and white space respectively.
+				</li>
+				<li>
+					<span class="bold">[a-z], [A-Z], [0-9]</span> These patterns find all lowercase letters, all capital letters, and all digits.
+				</li>
+				<li>
+					<span class="bold">^(pattern)</span> The carat serves as an anchor to mark that we are looking for something at the beginning of a string.
+					It is most useful when working with so many strings that it wouldn't be easy to look at the beginning of each string separately.
+				</li>
+				<li>
+					<span class="bold">(pattern)$</span> The dollar sign serves as an anchor to mark that we are looking for something at the end of a string.
+					Like the carat, it is most useful when working with many strings.
+				</li>
+			</ul>
+			</br>
+			<span class="bold">r'^\d'</span> is an example pattern you could put together using these pieces. This pattern will match a string of digits
+			that occurs at the beginning of a string. To learn more about what goes into a regulaar expression, check out
+			<a href="https://www.rexegg.com/regex-quickstart.html">this</a> site.
+			<div class="section">
+				Some useful RegEx patterns
+			</br>
+			</div>
+			</br>
+				Now that you understand the basics of RegEx, here's a few patterns that may help you when cleaning data. Depending on what you're doing,
+				you may either want to replace the phrases these patterns match with generic phrases (so, for example, you could replace a URL simply with
+				the phrase 'URL') or just collect the phrases together.
+			</br>
+				<ul>
+					<li>
+						<span class="bold">r'http.*'</span>: This pattern matches all URLs.
+					</li>
+					<li>
+						<p><span class="bold">r'<.*[^A-Za-z]>|</[A-Za-z]>'</span>: This pattern matches all HTML tags.</p>
+					</li>
+					<li>
+						<span class="bold">r'[^\w\s]'</span>: This patter matches anything that isn't a word or a whitespace. This includes digits, punctuation,
+						and even emojis.
+					</li>
+				</br>
+				</br>
+					With these simple regex patterns, you can get started cleaning up your data to be just right for your project.
+				</br>
+				</ul>
+			<div id="home">
+				<a href="../dh_tutorials.html">Back</a>
+			</div>
+		</div>
+  </body>
+</html>
